@@ -42,6 +42,25 @@ export interface PanelProps {
     setLang: (lang: LangType) => void;
     links: Array<MenuEntry>;
 }
+export interface PanelProps {
+    isDark: boolean;
+    toggleTheme: (isDark: boolean) => void;
+    brrlPriceUsd?: number;
+    currentLang: string;
+    langs: LangType[];
+    setLang: (lang: LangType) => void;
+    links: Array<MenuEntry>;
+}
+export interface PanelProps {
+    isDark: boolean;
+    toggleTheme: (isDark: boolean) => void;
+    tsbPriceUsd?: number;
+    currentLang: string;
+    langs: LangType[];
+    setLang: (lang: LangType) => void;
+    links: Array<MenuEntry>;
+}
+
 export interface NavProps extends PanelProps {
     account?: string;
     login: Login;

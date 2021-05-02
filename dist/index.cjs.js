@@ -2399,18 +2399,14 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/AztecSwapChat",
-            },
-            {
-                label: "Announcements",
-                href: "https://t.me/AztecSwapAnn",
+                href: "https://t.me/Bourbondefichat",
             },
         ],
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/AztecSwap",
+        href: "https://twitter.com/FinanceBourbon",
     },
 ];
 var MENU_HEIGHT = 64;
