@@ -2513,19 +2513,19 @@ var PriceLink3 = styled.a(templateObject_1$E || (templateObject_1$E = __makeTemp
 
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
-    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://dex.guru/token/0x8298fea38aa8627316ffd943fe001b69cac8174d-bsc", target: "_blank" },
+    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://dex.guru/token/0x7595bb34Bf391C3de0a6878A36D06223b2BFd404-bsc", target: "_blank" },
         React.createElement(Icon$v, { width: "24px", mr: "8px" }),
         React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
 var BrrlPrice = function (_a) {
     var brrlPriceUsd = _a.brrlPriceUsd;
-    return brrlPriceUsd ? (React.createElement(PriceLink2, { href: "https://dex.guru/token/0x8298fea38aa8627316ffd943fe001b69cac8174d-bsc", target: "_blank" },
+    return brrlPriceUsd ? (React.createElement(PriceLink2, { href: "https://dex.guru/token/0xcbe73dd7E8FC74011136b837a59205801c45e6A1-bsc", target: "_blank" },
         React.createElement(Icon$v2, { width: "24px", mr: "8px" }),
         React.createElement(Text, { color: "textSubtle", bold: true }, "$" + brrlPriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
 var TsbPrice = function (_a) {
     var tsbPriceUsd = _a.tsbPriceUsd;
-    return tsbPriceUsd ? (React.createElement(PriceLink3, { href: "https://dex.guru/token/0x8298fea38aa8627316ffd943fe001b69cac8174d-bsc", target: "_blank" },
+    return tsbPriceUsd ? (React.createElement(PriceLink3, { href: "https://dex.guru/token/0xA37F71f092F891757d23Dd350f57C78E8469c026-bsc", target: "_blank" },
         React.createElement(Icon$v3, { width: "24px", mr: "8px" }),
         React.createElement(Text, { color: "textSubtle", bold: true }, "$" + tsbPriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
