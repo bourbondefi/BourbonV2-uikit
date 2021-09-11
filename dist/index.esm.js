@@ -2400,7 +2400,7 @@ var socials = [
     },
 ];
 var MENU_HEIGHT = 64;
-var MENU_ENTRY_HEIGHT = 60;
+var MENU_ENTRY_HEIGHT = 48;
 var SIDEBAR_WIDTH_FULL = 240;
 var SIDEBAR_WIDTH_REDUCED = 56;
 
@@ -2513,7 +2513,7 @@ var PriceLink3 = styled.a(templateObject_1$E || (templateObject_1$E = __makeTemp
 
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
-    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://dex.guru/token/0x7595bb34Bf391C3de0a6878A36D06223b2BFd404-bsc", target: "_blank" },
+    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://exchange.bourbondefi.com/#/swap?outputCurrency=0x953eFEBe00e7D573f027396f1E06231e04F7597f", target: "_blank" },
         React.createElement(Icon$v, { width: "24px", mr: "8px" }),
         React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
@@ -2576,10 +2576,10 @@ var Container$4 = styled.div(templateObject_1$F || (templateObject_1$F = __makeT
     var theme = _a.theme;
     return theme.nav.background;
 });
-var SettingsEntry = styled.div(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  display: flex;\n flex-direction: column;\n align-items: flex-end;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 5 8px;\n"], ["\n  display: flex;\n  align-items: right;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
-var SocialEntry = styled.div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n align-items: flex-start;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
+var SettingsEntry = styled.div(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
+var SocialEntry = styled.div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, brrlPriceUsd = _a.brrlPriceUsd, tsbPriceUsd = _a.tsbPriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
     if (!isPushed) {
         return (React.createElement(Container$4, null,
             React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
@@ -2587,9 +2587,7 @@ var PanelFooter = function (_a) {
     }
     return (React.createElement(Container$4, null,
         React.createElement(SocialEntry, null,
-            React.createElement(BrrlPrice$1, { brrlPriceUsd: brrlPriceUsd }),
             React.createElement(CakePrice$1, { cakePriceUsd: cakePriceUsd }),
-            React.createElement(TsbPrice$1, { tsbPriceUsd: tsbPriceUsd }),
             React.createElement(SocialLinks$1, null)),
         React.createElement(SettingsEntry, null,
             React.createElement(ThemeSwitcher$1, { isDark: isDark, toggleTheme: toggleTheme }),
